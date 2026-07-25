@@ -1,0 +1,169 @@
+implementation,kernel,batch,tokens,channels,layers,avg_ms,min_ms,max_ms,label,kind,n,config
+C++,geometric_product,8,2,1,1,0.0871165666666666,0.086834,0.087791,Baseline C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+C++,equi_linear,8,2,1,1,0.0418555666666666,0.04175,0.042208,Baseline C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+C++,equi_join,8,2,1,1,2.2393597000000005,2.14625,2.494917,Baseline C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+C++,equi_rms_norm,8,2,1,1,0.0005597333333333,0.0005,0.00075,Baseline C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+C++,scaler_gated_gelu,8,2,1,1,0.0008013666666666,0.0005,0.008458,Baseline C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+C++,equi_geometric_attention,8,2,1,1,0.1201444666666666,0.10925,0.123,Baseline C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+C++,geometric_product,8,4,2,2,0.1952666,0.185958,0.264833,Baseline C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+C++,equi_linear,8,4,2,2,0.2294027666666667,0.226458,0.270333,Baseline C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+C++,equi_join,8,4,2,2,2.3886972,2.314541,2.645417,Baseline C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+C++,equi_rms_norm,8,4,2,2,0.0010028,0.000958,0.001292,Baseline C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+C++,scaler_gated_gelu,8,4,2,2,0.0011237,0.001,0.003084,Baseline C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+C++,equi_geometric_attention,8,4,2,2,0.1435097333333333,0.139959,0.145917,Baseline C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+C++,geometric_product,8,8,4,4,0.7483527999999999,0.739917,0.765,Baseline C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+C++,equi_linear,8,8,4,4,2.4253639333333337,2.378625,2.567542,Baseline C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+C++,equi_join,8,8,4,4,2.999269466666666,2.975458,3.130958,Baseline C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+C++,equi_rms_norm,8,8,4,4,0.0028193333333333,0.002708,0.003125,Baseline C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+C++,scaler_gated_gelu,8,8,4,4,0.0029360666666666,0.00275,0.003208,Baseline C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+C++,equi_geometric_attention,8,8,4,4,0.3009638666666666,0.277,0.528917,Baseline C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+C++,geometric_product,8,16,8,8,3.0879319666666665,2.974125,3.478375,Baseline C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+C++,equi_linear,8,16,8,8,21.461079033333338,21.306875,21.893375,Baseline C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+C++,equi_join,8,16,8,8,5.6807431,5.569625,6.215667,Baseline C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+C++,equi_rms_norm,8,16,8,8,0.0077444,0.007208,0.015,Baseline C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+C++,scaler_gated_gelu,8,16,8,8,0.0106666333333333,0.010625,0.010834,Baseline C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+C++,equi_geometric_attention,8,16,8,8,1.2450847333333332,1.232917,1.458,Baseline C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+C++,geometric_product,8,32,16,16,12.892337466666666,12.723042,15.495916,Baseline C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+C++,equi_linear,8,32,16,16,197.81507366666665,192.583,248.837333,Baseline C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+C++,equi_join,8,32,16,16,17.389588933333325,17.170958,18.271208,Baseline C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+C++,equi_rms_norm,8,32,16,16,0.0240902666666666,0.024,0.024291,Baseline C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+C++,scaler_gated_gelu,8,32,16,16,0.0506596333333333,0.050166,0.054459,Baseline C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+C++,equi_geometric_attention,8,32,16,16,8.062795866666667,7.759625,8.976166,Baseline C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+C++,geometric_product,8,64,32,32,51.92497363333333,50.876125,54.420334,Baseline C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+C++,equi_linear,8,64,32,32,1505.5975166,1492.163792,1580.261625,Baseline C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+C++,equi_join,8,64,32,32,62.58454733333335,61.873459,72.087667,Baseline C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+C++,equi_rms_norm,8,64,32,32,0.0866721333333333,0.085875,0.104375,Baseline C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+C++,scaler_gated_gelu,8,64,32,32,0.2647209,0.226875,0.837916,Baseline C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+C++,equi_geometric_attention,8,64,32,32,67.75287213333334,67.590459,69.356708,Baseline C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+C++,geometric_product,8,128,64,64,215.6329444,203.733917,229.439958,Baseline C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+C++,equi_linear,8,128,64,64,12435.87360136667,12029.999667,14600.863166,Baseline C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+C++,equi_join,8,128,64,64,240.88810146666663,239.054625,247.995708,Baseline C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+C++,equi_rms_norm,8,128,64,64,0.3414750333333334,0.334792,0.453084,Baseline C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+C++,scaler_gated_gelu,8,128,64,64,0.9396125,0.938292,0.943916,Baseline C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+C++,equi_geometric_attention,8,128,64,64,553.8101291,551.976292,559.245,Baseline C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Python,geometric_product,8,2,1,1,0.1234458333333333,0.090125,0.869084,Python,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Python,equi_linear,8,2,1,1,0.1167624333333333,0.104333,0.183459,Python,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Python,equi_join,8,2,1,1,0.1033554666666666,0.09525,0.170625,Python,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Python,equi_rms_norm,8,2,1,1,0.025307,0.024333,0.027625,Python,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Python,scaler_gated_gelu,8,2,1,1,0.0058847,0.005583,0.006833,Python,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Python,equi_geometric_attention,8,2,1,1,0.7061361333333334,0.299458,9.389333,Python,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Python,geometric_product,8,4,2,2,0.1097805666666666,0.105083,0.172875,Python,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Python,equi_linear,8,4,2,2,0.1547569666666666,0.121708,0.505209,Python,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Python,equi_join,8,4,2,2,0.1197791666666667,0.1135,0.19625,Python,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Python,equi_rms_norm,8,4,2,2,0.0270249333333333,0.026375,0.029167,Python,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Python,scaler_gated_gelu,8,4,2,2,0.0085457,0.00625,0.04675,Python,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Python,equi_geometric_attention,8,4,2,2,0.3971638999999999,0.353292,0.693667,Python,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Python,geometric_product,8,8,4,4,0.1243998999999999,0.113667,0.1845,Python,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Python,equi_linear,8,8,4,4,0.136257,0.121542,0.365834,Python,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Python,equi_join,8,8,4,4,0.1335374666666666,0.121375,0.21775,Python,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Python,equi_rms_norm,8,8,4,4,0.0310041999999999,0.030417,0.032542,Python,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Python,scaler_gated_gelu,8,8,4,4,0.0075625333333333,0.007417,0.008167,Python,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Python,equi_geometric_attention,8,8,4,4,0.5486889333333331,0.492083,0.806916,Python,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Python,geometric_product,8,16,8,8,0.1589528666666667,0.139375,0.50925,Python,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Python,equi_linear,8,16,8,8,0.1489943999999999,0.133291,0.273875,Python,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Python,equi_join,8,16,8,8,0.2420208333333333,0.148375,2.473125,Python,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Python,equi_rms_norm,8,16,8,8,0.0459388666666666,0.044291,0.049417,Python,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Python,scaler_gated_gelu,8,16,8,8,0.0120958666666666,0.011916,0.012791,Python,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Python,equi_geometric_attention,8,16,8,8,2.0318166333333334,0.755209,15.911917,Python,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Python,geometric_product,8,32,16,16,0.5744888333333334,0.281916,2.186917,Python,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Python,equi_linear,8,32,16,16,0.2810027333333333,0.208167,0.732083,Python,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Python,equi_join,8,32,16,16,0.6213777666666667,0.324042,2.136792,Python,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Python,equi_rms_norm,8,32,16,16,0.1547207999999999,0.131709,0.572709,Python,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Python,scaler_gated_gelu,8,32,16,16,0.0845652,0.033625,0.333792,Python,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Python,equi_geometric_attention,8,32,16,16,2.112906933333334,1.44375,9.850334,Python,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Python,geometric_product,8,64,32,32,1.8076972333333337,1.138333,10.824792,Python,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Python,equi_linear,8,64,32,32,2.839034733333333,2.281375,5.342959,Python,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Python,equi_join,8,64,32,32,2.1817125666666666,1.229,7.588458,Python,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Python,equi_rms_norm,8,64,32,32,0.3637792333333333,0.189458,0.921209,Python,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Python,scaler_gated_gelu,8,64,32,32,0.1486513,0.108625,0.359041,Python,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Python,equi_geometric_attention,8,64,32,32,6.043707033333332,5.058292,7.558167,Python,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Python,geometric_product,8,128,64,64,7.552147199999999,6.747042,9.12125,Python,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Python,equi_linear,8,128,64,64,19.425524966666668,17.942042,25.337541,Python,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Python,equi_join,8,128,64,64,7.045561200000001,6.546709,8.206209,Python,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Python,equi_rms_norm,8,128,64,64,1.3653804666666665,0.9645,4.435375,Python,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Python,scaler_gated_gelu,8,128,64,64,0.1439263666666667,0.135291,0.244292,Python,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Python,equi_geometric_attention,8,128,64,64,26.61254163333333,23.461125,42.673042,Python,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Vectorized C++,geometric_product,8,2,1,1,0.0005735666666666,0.000541,0.001042,SIMD C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Vectorized C++,equi_linear,8,2,1,1,0.0004888666666666,0.000458,0.000625,SIMD C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Vectorized C++,equi_join,8,2,1,1,0.0014709,0.001416,0.001875,SIMD C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Vectorized C++,equi_rms_norm,8,2,1,1,0.0004527,0.000416,0.000542,SIMD C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Vectorized C++,scaler_gated_gelu,8,2,1,1,0.0004693666666666,0.000416,0.000625,SIMD C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Vectorized C++,equi_geometric_attention,8,2,1,1,0.0163707666666666,0.015708,0.018458,SIMD C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Vectorized C++,geometric_product,8,4,2,2,0.0008736333333333,0.000833,0.001042,SIMD C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Vectorized C++,equi_linear,8,4,2,2,0.0007985333333333,0.00075,0.001,SIMD C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Vectorized C++,equi_join,8,4,2,2,0.0017389333333333,0.001667,0.002041,SIMD C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Vectorized C++,equi_rms_norm,8,4,2,2,0.0006139333333333,0.000583,0.000708,SIMD C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Vectorized C++,scaler_gated_gelu,8,4,2,2,0.0005903,0.000542,0.000667,SIMD C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Vectorized C++,equi_geometric_attention,8,4,2,2,0.0231598,0.02225,0.025667,SIMD C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Vectorized C++,geometric_product,8,8,4,4,0.0021529,0.002125,0.002334,SIMD C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Vectorized C++,equi_linear,8,8,4,4,0.0015167,0.0015,0.001583,SIMD C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Vectorized C++,equi_join,8,8,4,4,0.0034152,0.003333,0.003792,SIMD C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Vectorized C++,equi_rms_norm,8,8,4,4,0.0011402666666666,0.001083,0.001291,SIMD C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Vectorized C++,scaler_gated_gelu,8,8,4,4,0.0012972,0.00125,0.001458,SIMD C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Vectorized C++,equi_geometric_attention,8,8,4,4,0.0483583333333333,0.04725,0.049667,SIMD C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Vectorized C++,geometric_product,8,16,8,8,0.0074042333333333,0.00725,0.008083,SIMD C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Vectorized C++,equi_linear,8,16,8,8,0.0077943666666666,0.00775,0.008041,SIMD C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Vectorized C++,equi_join,8,16,8,8,0.0116167,0.009708,0.033458,SIMD C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Vectorized C++,equi_rms_norm,8,16,8,8,0.0068847666666666,0.003333,0.069833,SIMD C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Vectorized C++,scaler_gated_gelu,8,16,8,8,0.0050833,0.005,0.005333,SIMD C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Vectorized C++,equi_geometric_attention,8,16,8,8,0.1853431666666667,0.180042,0.20375,SIMD C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Vectorized C++,geometric_product,8,32,16,16,0.028657,0.028416,0.029209,SIMD C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Vectorized C++,equi_linear,8,32,16,16,0.0516763666666666,0.0515,0.051833,SIMD C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Vectorized C++,equi_join,8,32,16,16,0.0328194333333333,0.032625,0.033375,SIMD C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Vectorized C++,equi_rms_norm,8,32,16,16,0.0138068333333333,0.013708,0.014291,SIMD C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Vectorized C++,scaler_gated_gelu,8,32,16,16,0.0242306333333333,0.023458,0.026375,SIMD C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Vectorized C++,equi_geometric_attention,8,32,16,16,2.268788933333333,0.971708,15.626916,SIMD C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Vectorized C++,geometric_product,8,64,32,32,0.1128333666666666,0.109833,0.117417,SIMD C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Vectorized C++,equi_linear,8,64,32,32,0.3943347666666667,0.375,0.635084,SIMD C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Vectorized C++,equi_join,8,64,32,32,0.2123028333333333,0.135375,0.592584,SIMD C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Vectorized C++,equi_rms_norm,8,64,32,32,0.0450998999999999,0.044583,0.046292,SIMD C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Vectorized C++,scaler_gated_gelu,8,64,32,32,0.1780751,0.153708,0.53175,SIMD C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Vectorized C++,equi_geometric_attention,8,64,32,32,8.388190233333335,7.812334,11.03875,SIMD C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Vectorized C++,geometric_product,8,128,64,64,0.7816750666666665,0.46325,1.705,SIMD C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Vectorized C++,equi_linear,8,128,64,64,5.229212599999999,5.026167,6.581708,SIMD C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Vectorized C++,equi_join,8,128,64,64,0.9327264666666668,0.542833,2.90225,SIMD C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Vectorized C++,equi_rms_norm,8,128,64,64,0.1816721999999999,0.160334,0.546042,SIMD C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Vectorized C++,scaler_gated_gelu,8,128,64,64,0.6775735333333333,0.669958,0.707458,SIMD C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Vectorized C++,equi_geometric_attention,8,128,64,64,69.8486445,65.772417,102.132958,SIMD C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Optimized-for-cache C++,geometric_product,8,2,1,1,0.0019069333333333,0.001833,0.002583,Optimized-for-cache C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Optimized-for-cache C++,equi_linear,8,2,1,1,0.0011222,0.001041,0.0015,Optimized-for-cache C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Optimized-for-cache C++,equi_join,8,2,1,1,0.0036501,0.003458,0.005208,Optimized-for-cache C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Optimized-for-cache C++,equi_rms_norm,8,2,1,1,0.0012986333333333,0.00125,0.001541,Optimized-for-cache C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Optimized-for-cache C++,scaler_gated_gelu,8,2,1,1,0.0012652666666666,0.001208,0.001583,Optimized-for-cache C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Optimized-for-cache C++,equi_geometric_attention,8,2,1,1,0.0342901666666666,0.033583,0.038125,Optimized-for-cache C++,per_kernel,1,N=1  B=8 T=2 C=1 L=1
+Optimized-for-cache C++,geometric_product,8,4,2,2,0.0036125333333333,0.003541,0.003875,Optimized-for-cache C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Optimized-for-cache C++,equi_linear,8,4,2,2,0.0017485333333333,0.001708,0.001916,Optimized-for-cache C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Optimized-for-cache C++,equi_join,8,4,2,2,0.0044125333333333,0.004291,0.00525,Optimized-for-cache C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Optimized-for-cache C++,equi_rms_norm,8,4,2,2,0.0020027666666666,0.001958,0.002292,Optimized-for-cache C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Optimized-for-cache C++,scaler_gated_gelu,8,4,2,2,0.0020264333333333,0.001958,0.002333,Optimized-for-cache C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Optimized-for-cache C++,equi_geometric_attention,8,4,2,2,0.0496362,0.048916,0.051583,Optimized-for-cache C++,per_kernel,2,N=2  B=8 T=4 C=2 L=2
+Optimized-for-cache C++,geometric_product,8,8,4,4,0.0101569,0.010083,0.010459,Optimized-for-cache C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Optimized-for-cache C++,equi_linear,8,8,4,4,0.0100055666666666,0.006083,0.057417,Optimized-for-cache C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Optimized-for-cache C++,equi_join,8,8,4,4,0.0083457,0.00825,0.009,Optimized-for-cache C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Optimized-for-cache C++,equi_rms_norm,8,8,4,4,0.0049334333333333,0.004875,0.005291,Optimized-for-cache C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Optimized-for-cache C++,scaler_gated_gelu,8,8,4,4,0.0051527,0.005083,0.005416,Optimized-for-cache C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Optimized-for-cache C++,equi_geometric_attention,8,8,4,4,0.1162873333333333,0.115416,0.120166,Optimized-for-cache C++,per_kernel,4,N=4  B=8 T=8 C=4 L=4
+Optimized-for-cache C++,geometric_product,8,16,8,8,0.0401277,0.033958,0.133542,Optimized-for-cache C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Optimized-for-cache C++,equi_linear,8,16,8,8,0.0358584666666666,0.035208,0.03675,Optimized-for-cache C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Optimized-for-cache C++,equi_join,8,16,8,8,0.0239360666666666,0.023667,0.024583,Optimized-for-cache C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Optimized-for-cache C++,equi_rms_norm,8,16,8,8,0.0120833333333333,0.011917,0.012375,Optimized-for-cache C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Optimized-for-cache C++,scaler_gated_gelu,8,16,8,8,0.0176083,0.017417,0.018041,Optimized-for-cache C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Optimized-for-cache C++,equi_geometric_attention,8,16,8,8,0.5223958333333333,0.397833,2.520333,Optimized-for-cache C++,per_kernel,8,N=8  B=8 T=16 C=8 L=8
+Optimized-for-cache C++,geometric_product,8,32,16,16,0.0872138999999999,0.087,0.088416,Optimized-for-cache C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Optimized-for-cache C++,equi_linear,8,32,16,16,0.1983500333333333,0.191209,0.364084,Optimized-for-cache C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Optimized-for-cache C++,equi_join,8,32,16,16,0.0829876,0.057125,0.580834,Optimized-for-cache C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Optimized-for-cache C++,equi_rms_norm,8,32,16,16,0.0240930666666666,0.023958,0.024291,Optimized-for-cache C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Optimized-for-cache C++,scaler_gated_gelu,8,32,16,16,0.0539027666666666,0.046708,0.159916,Optimized-for-cache C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Optimized-for-cache C++,equi_geometric_attention,8,32,16,16,2.4979151666666666,2.41975,2.985167,Optimized-for-cache C++,per_kernel,16,N=16  B=8 T=32 C=16 L=16
+Optimized-for-cache C++,geometric_product,8,64,32,32,0.3519415666666666,0.346625,0.375166,Optimized-for-cache C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Optimized-for-cache C++,equi_linear,8,64,32,32,2.155597266666667,1.670542,3.867167,Optimized-for-cache C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Optimized-for-cache C++,equi_join,8,64,32,32,0.3687223,0.230208,1.156958,Optimized-for-cache C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Optimized-for-cache C++,equi_rms_norm,8,64,32,32,0.0917833333333333,0.086541,0.180125,Optimized-for-cache C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Optimized-for-cache C++,scaler_gated_gelu,8,64,32,32,0.2542610999999999,0.219292,0.768375,Optimized-for-cache C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Optimized-for-cache C++,equi_geometric_attention,8,64,32,32,26.369722233333334,19.72875,163.088334,Optimized-for-cache C++,per_kernel,32,N=32  B=8 T=64 C=32 L=32
+Optimized-for-cache C++,geometric_product,8,128,64,64,1.3398095999999995,1.327375,1.358833,Optimized-for-cache C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Optimized-for-cache C++,equi_linear,8,128,64,64,13.971327766666668,13.806791,15.001042,Optimized-for-cache C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Optimized-for-cache C++,equi_join,8,128,64,64,1.1890554999999998,0.905167,3.261083,Optimized-for-cache C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Optimized-for-cache C++,equi_rms_norm,8,128,64,64,0.3477792333333334,0.320834,0.620958,Optimized-for-cache C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Optimized-for-cache C++,scaler_gated_gelu,8,128,64,64,0.9140472666666668,0.891417,1.139792,Optimized-for-cache C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64
+Optimized-for-cache C++,equi_geometric_attention,8,128,64,64,146.66383886666665,134.936625,236.601833,Optimized-for-cache C++,per_kernel,64,N=64  B=8 T=128 C=64 L=64

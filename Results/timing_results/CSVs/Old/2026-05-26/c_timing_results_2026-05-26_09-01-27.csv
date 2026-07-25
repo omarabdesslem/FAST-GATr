@@ -1,0 +1,2 @@
+implementation,batch,tokens,channels,avg_ms,min_ms,max_ms
+C++,8,32,16,251729.4044236667,251507.456166,252259.174

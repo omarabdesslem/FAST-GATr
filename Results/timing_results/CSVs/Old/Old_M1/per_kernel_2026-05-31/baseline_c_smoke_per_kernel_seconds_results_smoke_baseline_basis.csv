@@ -1,0 +1,6 @@
+implementation,kernel,batch,tokens,channels,layers,avg_ms,min_ms,max_ms
+C++ smoke,geometric_product,1,2,1,1,0.009917,0.009917,0.009917
+C++ smoke,equi_linear,1,2,1,1,0.004292,0.004292,0.004292
+C++ smoke,equi_join,1,2,1,1,2.212959,2.212959,2.212959
+C++ smoke,equi_rms_norm,1,2,1,1,0.000791,0.000791,0.000791
+C++ smoke,scaler_gated_gelu,1,2,1,1,0.000625,0.000625,0.000625

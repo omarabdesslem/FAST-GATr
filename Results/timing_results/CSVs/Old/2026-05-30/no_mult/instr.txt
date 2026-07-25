@@ -1,0 +1,15 @@
+tried to disable multithreaeing when running tests using this:
+OMP_NUM_THREADS=1 \
+MKL_NUM_THREADS=1 \
+OPENBLAS_NUM_THREADS=1 \
+VECLIB_MAXIMUM_THREADS=1 \
+NUMEXPR_NUM_THREADS=1 \
+python3 -m python.tests.timing.seconds.baseline_python_code
+
+
+
+or similarly for other test files
+
+
+We saw that we get no diffference except the regular fluctations between different timing runs, 
+meaning in terms of timing result this did likely not make any visible difference

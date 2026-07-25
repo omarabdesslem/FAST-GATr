@@ -1,0 +1,35 @@
+implementation,batch,tokens,channels,avg_ms,min_ms,max_ms,layers,label,kind,n,config
+C++,8,2,1,988.4798375333334,984.589209,1016.445125,1,Baseline C++,end_to_end,1,N=1  B=8 T=2 C=1 L=1
+C++,8,4,2,3964.9864695,3939.922083,4061.590291,2,Baseline C++,end_to_end,2,N=2  B=8 T=4 C=2 L=2
+C++,8,8,4,15739.822252599994,15715.598041,15959.571875,4,Baseline C++,end_to_end,4,N=4  B=8 T=8 C=4 L=4
+C++,8,16,8,63080.10251389999,62866.853959,64449.726416,8,Baseline C++,end_to_end,8,N=8  B=8 T=16 C=8 L=8
+C++,8,32,16,251729.4044236667,251507.456166,252259.174,16,Baseline C++,end_to_end,16,N=16  B=8 T=32 C=16 L=16
+C++,8,64,32,1006917.6176946668,1006029.824664,1009036.696,32,Baseline C++,end_to_end,32,N=32  B=8 T=64 C=32 L=32
+Python,8,2,1,2.9390180999999993,2.6365,4.341417,1,Python,end_to_end,1,N=1  B=8 T=2 C=1 L=1
+Python,8,4,2,7.0481292333333325,6.906208,7.352542,2,Python,end_to_end,2,N=2  B=8 T=4 C=2 L=2
+Python,8,8,4,21.985058433333332,21.400125,23.646333,4,Python,end_to_end,4,N=4  B=8 T=8 C=4 L=4
+Python,8,16,8,82.03836393333333,79.135292,97.125041,8,Python,end_to_end,8,N=8  B=8 T=16 C=8 L=8
+Python,8,32,16,344.5947541333333,331.3185,382.570667,16,Python,end_to_end,16,N=16  B=8 T=32 C=16 L=16
+Python,8,64,32,1898.1072152666668,1831.689416,2154.292333,32,Python,end_to_end,32,N=32  B=8 T=64 C=32 L=32
+Python,8,128,64,10080.193530566665,9532.062375,13272.628958,64,Python,end_to_end,64,N=64  B=8 T=128 C=64 L=64
+Optimized C++,8,2,1,1.5830278333333334,1.415291,1.878667,1,Optimized C++,end_to_end,1,N=1  B=8 T=2 C=1 L=1
+Optimized C++,8,4,2,5.799934800000002,5.684375,5.868542,2,Optimized C++,end_to_end,2,N=2  B=8 T=4 C=2 L=2
+Optimized C++,8,8,4,23.045645900000004,22.926167,23.24,4,Optimized C++,end_to_end,4,N=4  B=8 T=8 C=4 L=4
+Optimized C++,8,16,8,96.31277213333333,95.967375,100.36275,8,Optimized C++,end_to_end,8,N=8  B=8 T=16 C=8 L=8
+Optimized C++,8,32,16,419.21583053333336,417.039084,435.011458,16,Optimized C++,end_to_end,16,N=16  B=8 T=32 C=16 L=16
+Optimized C++,8,64,32,1980.6561750666665,1978.900125,1987.668,32,Optimized C++,end_to_end,32,N=32  B=8 T=64 C=32 L=32
+Optimized C++,8,128,64,10014.9892818,9970.633833,10223.411709,64,Optimized C++,end_to_end,64,N=64  B=8 T=128 C=64 L=64
+Optimized-for-cache C++,8,2,1,1.3978278333333332,1.3735,1.515125,1,Optimized-for-cache C++,end_to_end,1,N=1  B=8 T=2 C=1 L=1
+Optimized-for-cache C++,8,4,2,5.669366600000001,5.572875,6.429,2,Optimized-for-cache C++,end_to_end,2,N=2  B=8 T=4 C=2 L=2
+Optimized-for-cache C++,8,8,4,25.9710931,22.411416,52.585667,4,Optimized-for-cache C++,end_to_end,4,N=4  B=8 T=8 C=4 L=4
+Optimized-for-cache C++,8,16,8,96.38418476666668,94.070583,112.885,8,Optimized-for-cache C++,end_to_end,8,N=8  B=8 T=16 C=8 L=8
+Optimized-for-cache C++,8,32,16,456.1230138333333,436.129916,488.751875,16,Optimized-for-cache C++,end_to_end,16,N=16  B=8 T=32 C=16 L=16
+Optimized-for-cache C++,8,64,32,2564.531414,2439.914084,2666.952875,32,Optimized-for-cache C++,end_to_end,32,N=32  B=8 T=64 C=32 L=32
+Optimized-for-cache C++,8,128,64,14113.8412098,13535.785292,15894.906875,64,Optimized-for-cache C++,end_to_end,64,N=64  B=8 T=128 C=64 L=64
+simd C++,8,2,1,0.6566723333333334,0.63775,0.738542,1,SIMD C++,end_to_end,1,N=1  B=8 T=2 C=1 L=1
+simd C++,8,4,2,2.7467791666666668,2.379958,8.109,2,SIMD C++,end_to_end,2,N=2  B=8 T=4 C=2 L=2
+simd C++,8,8,4,10.549079066666668,9.250125,29.537708,4,SIMD C++,end_to_end,4,N=4  B=8 T=8 C=4 L=4
+simd C++,8,16,8,42.31480263333334,38.679333,60.61,8,SIMD C++,end_to_end,8,N=8  B=8 T=16 C=8 L=8
+simd C++,8,32,16,205.37058333333337,187.873667,291.723709,16,SIMD C++,end_to_end,16,N=16  B=8 T=32 C=16 L=16
+simd C++,8,64,32,1008.3150680999998,962.895792,1153.46375,32,SIMD C++,end_to_end,32,N=32  B=8 T=64 C=32 L=32
+simd C++,8,128,64,5865.451591766667,5713.210875,6333.685542,64,SIMD C++,end_to_end,64,N=64  B=8 T=128 C=64 L=64

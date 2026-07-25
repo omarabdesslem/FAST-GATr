@@ -1,0 +1,49 @@
+implementation,flag_id,flags,batch,tokens,channels,layers,avg_ms,min_ms,max_ms
+SIMD C++,default_simd,-std=c++17 -O3 -DNDEBUG -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,2,1,1,0.9587847333333335,0.861042,1.863625
+SIMD C++,default_simd,-std=c++17 -O3 -DNDEBUG -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,4,2,2,3.9168125000000003,3.08925,8.858416
+SIMD C++,default_simd,-std=c++17 -O3 -DNDEBUG -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,8,4,4,12.512065200000004,12.060875,16.462458
+SIMD C++,default_simd,-std=c++17 -O3 -DNDEBUG -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,16,8,8,56.781222166666666,49.633167,97.524125
+SIMD C++,default_simd,-std=c++17 -O3 -DNDEBUG -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,32,16,16,234.79824293333334,223.124083,299.938666
+SIMD C++,default_simd,-std=c++17 -O3 -DNDEBUG -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,64,32,32,1187.7391111000002,1122.77925,1386.543583
+SIMD C++,default_simd,-std=c++17 -O3 -DNDEBUG -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,128,64,64,6542.634924933332,6287.5735,7450.884
+SIMD C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,2,1,1,0.8410276999999998,0.783125,0.893667
+SIMD C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,4,2,2,3.4169403333333332,3.282125,3.519833
+SIMD C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,8,4,4,14.644211133333332,14.077083,17.418666
+SIMD C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,16,8,8,63.21500136666668,59.465167,79.642416
+SIMD C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,32,16,16,273.3674568666667,261.938167,313.888333
+SIMD C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,64,32,32,1278.365223533333,1250.879333,1362.489583
+SIMD C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,128,64,64,6726.4430638333315,6536.208083,6998.948458
+SIMD C++,o3_no_autovec,-std=c++17 -Wall -O3 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,2,1,1,0.9035847333333334,0.844333,1.018166
+SIMD C++,o3_no_autovec,-std=c++17 -Wall -O3 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,4,2,2,3.603740166666666,3.517625,3.824625
+SIMD C++,o3_no_autovec,-std=c++17 -Wall -O3 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,8,4,4,14.780181833333332,14.21525,15.267334
+SIMD C++,o3_no_autovec,-std=c++17 -Wall -O3 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,16,8,8,62.24796526666665,59.334292,71.63
+SIMD C++,o3_no_autovec,-std=c++17 -Wall -O3 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,32,16,16,282.1462112666667,263.059459,396.819209
+SIMD C++,o3_no_autovec,-std=c++17 -Wall -O3 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,64,32,32,1309.1477125333336,1277.917584,1476.373708
+SIMD C++,o3_no_autovec,-std=c++17 -Wall -O3 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,128,64,64,6805.480908433334,6612.052084,7062.101667
+SIMD C++,o3_native,-std=c++17 -Wall -O3 -DNDEBUG -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,2,1,1,0.8824458999999999,0.792875,0.901
+SIMD C++,o3_native,-std=c++17 -Wall -O3 -DNDEBUG -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,4,2,2,3.621970833333334,3.389666,3.847417
+SIMD C++,o3_native,-std=c++17 -Wall -O3 -DNDEBUG -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,8,4,4,18.5944014,15.256958,23.347541
+SIMD C++,o3_native,-std=c++17 -Wall -O3 -DNDEBUG -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,16,8,8,70.77067633333333,62.400041,98.484291
+SIMD C++,o3_native,-std=c++17 -Wall -O3 -DNDEBUG -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,32,16,16,284.1610847333334,273.058084,335.963292
+SIMD C++,o3_native,-std=c++17 -Wall -O3 -DNDEBUG -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,64,32,32,1399.2995569000002,1293.891917,2443.557
+SIMD C++,o3_native,-std=c++17 -Wall -O3 -DNDEBUG -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,128,64,64,6779.289697300001,6638.771875,6973.037792
+SIMD C++,o3_native_fast_math,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,2,1,1,1.0069639000000001,0.788666,1.412041
+SIMD C++,o3_native_fast_math,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,4,2,2,4.5718987,3.415208,8.008917
+SIMD C++,o3_native_fast_math,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,8,4,4,17.015015266666662,14.260541,26.352917
+SIMD C++,o3_native_fast_math,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,16,8,8,67.58828610000002,61.158875,96.530917
+SIMD C++,o3_native_fast_math,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,32,16,16,284.2850945,263.421625,353.066667
+SIMD C++,o3_native_fast_math,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,64,32,32,1259.7478207,1233.567042,1296.211166
+SIMD C++,o3_native_fast_math,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,128,64,64,6592.3038125,6433.032541,7165.664583
+SIMD C++,o3_native_fast_math_unroll,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,2,1,1,0.8797110666666669,0.831333,1.71925
+SIMD C++,o3_native_fast_math_unroll,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,4,2,2,3.8340987666666675,3.295833,10.088125
+SIMD C++,o3_native_fast_math_unroll,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,8,4,4,15.535994466666665,14.222291,29.852125
+SIMD C++,o3_native_fast_math_unroll,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,16,8,8,61.69643886666667,59.699083,67.349792
+SIMD C++,o3_native_fast_math_unroll,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,32,16,16,276.88116249999996,261.733709,336.572625
+SIMD C++,o3_native_fast_math_unroll,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,64,32,32,1283.4616653333335,1232.462084,1372.149333
+SIMD C++,o3_native_fast_math_unroll,-std=c++17 -Wall -O3 -DNDEBUG -ffast-math -funroll-loops -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,128,64,64,6531.6082264666675,6389.830458,6657.192292
+Optimized C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,2,1,1,2.2046791333333338,2.05925,2.34475
+Optimized C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,4,2,2,9.684504033333333,9.252208,19.018208
+Optimized C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,8,4,4,39.392048700000004,38.062542,42.868917
+Optimized C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,16,8,8,170.37261523333336,163.3235,210.8225
+Optimized C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,32,16,16,731.5797000666665,718.232625,748.696791
+Optimized C++,o2_no_autovec,-std=c++17 -Wall -O2 -DNDEBUG -fno-vectorize -fno-slp-vectorize -Wno-error=invalid-specialization -Wno-invalid-specialization -mcpu=native,8,64,32,32,3536.222743000001,3451.341958,3894.704083

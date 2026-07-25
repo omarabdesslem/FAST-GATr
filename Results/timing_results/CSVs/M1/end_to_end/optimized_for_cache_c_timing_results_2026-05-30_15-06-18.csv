@@ -1,0 +1,8 @@
+implementation,batch,tokens,channels,layers,avg_ms,min_ms,max_ms
+Optimized-for-cache C++,8,2,1,1,1.3978278333333332,1.3735,1.515125
+Optimized-for-cache C++,8,4,2,2,5.669366600000001,5.572875,6.429
+Optimized-for-cache C++,8,8,4,4,25.9710931,22.411416,52.585667
+Optimized-for-cache C++,8,16,8,8,96.38418476666668,94.070583,112.885
+Optimized-for-cache C++,8,32,16,16,456.1230138333333,436.129916,488.751875
+Optimized-for-cache C++,8,64,32,32,2564.531414,2439.914084,2666.952875
+Optimized-for-cache C++,8,128,64,64,14113.8412098,13535.785292,15894.906875
