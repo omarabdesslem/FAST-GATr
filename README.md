@@ -4,7 +4,7 @@ FASTGatR is a single-core optimized implementation of the core operations in the
 
 GATr processes 3D geometric data using 16-dimensional multivectors from projective geometric algebra. For this project, we treat GATr primarily as a **structured computation problem**: rather than changing the model, we optimize the repeated low-level operations used throughout its forward pass.
 
-![EzGATr overview](Notes/Images/ezgatr_overview.png)
+![Figure: Overview of the Geometric Algebra Transformer (GATr), reproduced from Brehmer et al., “Geometric Algebra Transformer,” NeurIPS 2023 (arXiv:2305.18415).](Notes/Images/ezgatr_overview.png)
 
 Our starting point is **EzGATr (Easy Geometric Algebra Transformer)**, a readable PyTorch implementation that we use as both a reference and correctness oracle. We reimplement six core operations in C++ and optimize them by exploiting sparsity, improving data layout, reducing intermediate work, and applying ARM NEON SIMD vectorization. The report shows final speedups of up to **1500× over the straightforward C++ baseline** and **1.7–4.5× over the current state of the art: EzGATr**.
 
