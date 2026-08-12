@@ -6,7 +6,7 @@ GATr processes 3D geometric data using 16-dimensional multivectors from projecti
 
 ![EzGATr overview](Notes/Images/ezgatr_overview.png)
 
-Our starting point is **EzGATr (Easy Geometric Algebra Transformer)**, a readable PyTorch implementation that we use as both a reference and correctness oracle. We reimplement six core operations in C++ and optimize them by exploiting sparsity, improving data layout, reducing intermediate work, and applying ARM NEON SIMD vectorization. The report shows final speedups of up to **1500× over the straightforward C++ baseline** and **1.7–4.5× over EzGATr**.
+Our starting point is **EzGATr (Easy Geometric Algebra Transformer)**, a readable PyTorch implementation that we use as both a reference and correctness oracle. We reimplement six core operations in C++ and optimize them by exploiting sparsity, improving data layout, reducing intermediate work, and applying ARM NEON SIMD vectorization. The report shows final speedups of up to **1500× over the straightforward C++ baseline** and **1.7–4.5× over the current state of the art: EzGATr**.
 
 ## Core Operations
 
@@ -97,7 +97,7 @@ The SIMD implementation reaches up to approximately **1500× end-to-end speedup*
   <img src="Results/timing_results/Plots/comparison_plots/M1/speedups/baseline_cpp_vs_simd_cpp_end_to_end_speedup_ratio_log.png" alt="Baseline vs FASTGATr" width="49%" />
 </p>
 
-Compared with EzGATr, FASTGATr achieves approximately **1.7–4.5× end-to-end speedup**.
+Compared with the current state of the art model, FASTGATr achieves approximately **1.7–4.5× end-to-end speedup**.
 
 The optimized scalar builds sustain roughly **11–15 GFLOP/s**, while the SIMD version reaches approximately **27–32 GFLOP/s**, with a peak of about **32 GFLOP/s**, or 36% of the measured single-core NEON peak.
 
