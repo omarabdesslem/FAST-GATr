@@ -25,6 +25,7 @@ As a starting point we use the existing EzGATr (Easy Geometric Algebra Transform
 
 We'll be creating a straightforward implementation in C/C++
 
+![Performance Results](Results/timing_results/Plots/comparison_plots/M1/end_to_end/end_to_end_with_baseline_log.png)
 
 
 ## Build Output
@@ -52,23 +53,7 @@ Results/disassembly/
 Results/logs/
 ```
 
-## Clean Rebuild
+## Results
 
-To clean and rebuild the C++ extensions, run from `Code/python/`:
-
-```bash
-cd Code/python
-rm -rf build
-rm -f ops/*.so
-python3 setup.py build_ext
-```
-
-If basis files also need to be regenerated:
-
-```bash
-cd Code/python
-python3 -m ezgatr_extensions.make_basis
-rm -rf build
-rm -f ops/*.so
-python3 setup.py build_ext
-```
+![Baseline vs FASTGATr](Results/timing_results/Plots/comparison_plots/M1/speedups/baseline_cpp_vs_simd_cpp_end_to_end_speedup_ratio_log.png)
+![State Of The Art vs FASTGATr](Results/timing_results/Plots/comparison_plots/M1/speedups/python_vs_simd_cpp_end_to_end_speedup_ratio_log.png)
