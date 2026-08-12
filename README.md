@@ -19,6 +19,23 @@ We optimize the following functions:
 * <span style="color:#9467bd">`equi_geometric_attention`</span>: geometry-aware attention.
 * <span style="color:#17becf">`scalar_gated_gelu`</span>: gated GELU activation for scalar channels.
 
+
+## Results
+
+Exploiting the sparse algebraic structure provides the largest performance gain. The SIMD implementation outperforms EzGATr across all tested sizes.
+
+At the largest tested size, approximate per-kernel speedups over the C++ baseline are:
+
+| Kernel              | Scalar |   SIMD |
+| ------------------- | -----: | -----: |
+| `EquiLinear`        |  ~890× | ~2378× |
+| `geometric_product` |  ~161× |  ~276× |
+| `equi_join`         |  ~203× |  ~258× |
+| attention           |    ~4× |    ~8× |
+
+`EquiRMSNorm` and gated GELU gain less because they are already simple streaming kernels.
+
+
 ## Optimization Approach
 
 The main opportunity comes from the fact that GATr's fixed structure tensors are highly sparse. Dense implementations evaluate many zero-valued terms, while the optimized kernels compute only the nonzero interactions.
@@ -71,46 +88,14 @@ vfmaq_n_f32(...)
 
 to process four `float32` values per instruction.
 
-## Experimental Setup
-
-Benchmarks were run on an **Apple M1** performance core using Apple Clang.
-
-The tested configurations scale from:
-
-```text
-(B, T, C, L) = (8, 2, 1, 1)
-```
-
-to:
-
-```text
-(B, T, C, L) = (8, 128, 64, 64)
-```
-
-with 4 attention heads and internal width 32. Each configuration uses 10 warm-up runs and 30 timed repetitions. All implementations are validated against EzGATr with end-to-end mean absolute percentage error below **0.1%**.
-
-## Results
-
-![Performance Results](Results/timing_results/Plots/comparison_plots/M1/end_to_end/end_to_end_with_baseline_log.png)
-
-Exploiting the sparse algebraic structure provides the largest performance gain. The SIMD implementation outperforms EzGATr across all tested sizes.
-
-At the largest tested size, approximate per-kernel speedups over the C++ baseline are:
-
-| Kernel              | Scalar |   SIMD |
-| ------------------- | -----: | -----: |
-| `EquiLinear`        |  ~890× | ~2378× |
-| `geometric_product` |  ~161× |  ~276× |
-| `equi_join`         |  ~203× |  ~258× |
-| attention           |    ~4× |    ~8× |
-
-`EquiRMSNorm` and gated GELU gain less because they are already simple streaming kernels.
-
-![Baseline vs FASTGATr](Results/timing_results/Plots/comparison_plots/M1/speedups/baseline_cpp_vs_simd_cpp_end_to_end_speedup_ratio_log.png)
+## Speed-up Ratio per size
 
 The SIMD implementation reaches up to approximately **1500× end-to-end speedup** over the straightforward C++ baseline.
 
-![State Of The Art vs FASTGATr](Results/timing_results/Plots/comparison_plots/M1/speedups/python_vs_simd_cpp_end_to_end_speedup_ratio_log.png)
+<p align="center">
+  <img src="Results/timing_results/Plots/comparison_plots/M1/speedups/python_vs_simd_cpp_end_to_end_speedup_ratio_log.png" alt="State Of The Art vs FASTGATr" width="49%" />
+  <img src="Results/timing_results/Plots/comparison_plots/M1/speedups/baseline_cpp_vs_simd_cpp_end_to_end_speedup_ratio_log.png" alt="Baseline vs FASTGATr" width="49%" />
+</p>
 
 Compared with EzGATr, FASTGATr achieves approximately **1.7–4.5× end-to-end speedup**.
 
