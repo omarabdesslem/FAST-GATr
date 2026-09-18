@@ -1,4 +1,7 @@
-# FASTGATr: An Optimized Easy Geometric Algebra Transformer
+# FASTGATr: An Optimized Easy Geometric Algebra Transformer 
+
+This is a rebase from the ETH Gitlab. This project was done by: Felix Vu, Omar Abdesslem, Hafsa Ahmed, Elitsa Popova.
+
 
 FASTGatR is a single-core optimized implementation of the core operations in the **Geometric Algebra Transformer (GATr)**.
 
